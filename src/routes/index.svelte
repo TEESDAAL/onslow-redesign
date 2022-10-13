@@ -3,19 +3,19 @@
     import MainHeader from "./components/MainHeader.svelte";
     import Nav from "./components/Nav.svelte";
     let imageList: string[][] = [
-        ["/MicrosoftTeams-image.png", "1st image"],
-        ["/MicrosoftTeams-image (1).png", "2nd image"],
-        ["/MicrosoftTeams-image (2).png", "3rd image"],
-        ["/MicrosoftTeams-image (3).png", "4th image"],
-        ["/MicrosoftTeams-image (4).png", "5th image"]
-        ];
+        ["/blue.png", "1st image"],
+        ["/green.png", "2nd image"],
+        ["/purple.png", "3rd image"],
+        ["/red.png", "4th image"],
+        ["/yellow.png", "5th image"],
+    ];
 </script>
 
 <MainHeader />
 <div id="content">
-    <Nav/>
-    <div class="h-bar"/>
-    <ImageCarousel imageList={imageList}/>
+    <Nav />
+    <div class="h-bar" />
+    <ImageCarousel {imageList} />
 </div>
 
 <style>
