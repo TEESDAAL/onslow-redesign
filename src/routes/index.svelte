@@ -2,6 +2,7 @@
     import ImageCarousel from "./components/ImageCarousel.svelte";
     import MainHeader from "./components/MainHeader.svelte";
     import Nav from "./components/Nav.svelte";
+    import Timetable from "./components/Timetable.svelte";
     let imageList: string[][] = [
         ["/blue.png", "1st image"],
         ["/green.png", "2nd image"],
@@ -16,6 +17,7 @@
     <Nav />
     <div class="h-bar" />
     <ImageCarousel {imageList} />
+    <Timetable />
 </div>
 
 <style>

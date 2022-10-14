@@ -1,19 +1,17 @@
-<script lang='ts'>
+<script lang="ts">
     export let imagePath: string;
     export let text: string;
     export let url: string;
 </script>
 
 <a href={url}>
-    <div class="icon" style="background-image: {imagePath};">
-    </div>
+    <div class="icon" style="background-image: {imagePath};" />
     <h2>{text}</h2>
 </a>
 
 <style>
     :root {
         --icon-size: max(7vw, 90px);
-        --min-spacing: 
     }
     .icon {
         background-size: cover;
