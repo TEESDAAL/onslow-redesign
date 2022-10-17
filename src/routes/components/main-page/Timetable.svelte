@@ -46,35 +46,38 @@
 <div id="holder">
     <h1 id="important-dates">Important dates</h1>
     <div class="bar" />
-    <table id="info">
-        {#each Object.entries(CALENDAR) as day}
-            {#each day[1] as event}
-                <tr>
-                    <td class="date"><h1>{day[0]}</h1></td>
-                    <td class="info">
-                        <div class="event-info">
-                            <div class="text-holder">
-                                {#if "link" in event}
-                                    <a href={event.link}
-                                        ><h2>{event.title}</h2></a
-                                    >
-                                {:else}
-                                    <h2>{event.title}</h2>
-                                {/if}
-                                <h4>- {event.description}</h4>
-                                <h4>- {event.location}</h4>
+    <div id="timetable-holder">
+        <table id="info">
+            {#each Object.entries(CALENDAR) as day}
+                {#each day[1] as event}
+                    <tr>
+                        <td class="date"><h1>{day[0]}</h1></td>
+                        <td class="info">
+                            <div class="event-info">
+                                <div class="text-holder">
+                                    {#if "link" in event}
+                                        <a href={event.link}
+                                            ><h2>{event.title}</h2></a
+                                        >
+                                    {:else}
+                                        <h2>{event.title}</h2>
+                                    {/if}
+                                    <h4>- {event.description}</h4>
+                                    <h4>- {event.location}</h4>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
+                {/each}
             {/each}
-        {/each}
-    </table>
+        </table>
+    </div>
 </div>
 
 <style>
     #holder {
-        border-radius: 10px;
+        margin-top: 50px;
+        border-radius: 20px;
         width: 50%;
         text-align: center;
         padding: 10px;
@@ -85,7 +88,7 @@
     }
     .bar {
         height: 2.5px;
-        width: 60%;
+        /* width: 60%; */
         background-color: black;
         margin-bottom: 20px;
     }
@@ -93,15 +96,19 @@
         margin-bottom: 10px;
     }
     .date {
-        border-right: 3px solid #151515;
-        width: 40%;
+        border-right: 1px solid #151515;
+        width: 35%;
         height: 6em;
     }
     #info {
         border-spacing: 0 0;
         width: 100%;
+    }
+    #timetable-holder {
+        width: 100%;
+        padding: 20px 0;
         background-color: #f1f1f1;
-        border-radius: 10px;
+        border-radius: 20px;
     }
     .info {
         width: 70%;

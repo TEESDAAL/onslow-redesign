@@ -1,15 +1,24 @@
 <script lang="ts">
-    import ImageCarousel from "./components/ImageCarousel.svelte";
-    import MainHeader from "./components/MainHeader.svelte";
-    import Nav from "./components/Nav.svelte";
-    import Timetable from "./components/Timetable.svelte";
+    import ImageCarousel from "./components/main-page/ImageCarousel.svelte";
+    import MainHeader from "./components/main-page/MainHeader.svelte";
+    import Nav from "./components/main-page/Nav.svelte";
+    import Timetable from "./components/main-page/Timetable.svelte";
+    import TextBlock from "./components/main-page/TextBlock.svelte";
+    import { getStudentWellBeingInfo, getCareerInfo } from "./data/store.js";
+    import Footer from "./components/Footer.svelte";
     let imageList: string[][] = [
-        ["/blue.png", "1st image"],
+        [
+            "/DTC.png",
+            "Digital Technologies",
+            "subjects/digital-technology.html",
+        ],
         ["/green.png", "2nd image"],
         ["/purple.png", "3rd image"],
         ["/red.png", "4th image"],
         ["/yellow.png", "5th image"],
     ];
+    let wellbeing_info = getStudentWellBeingInfo();
+    let career_info = getCareerInfo();
 </script>
 
 <MainHeader />
@@ -18,6 +27,17 @@
     <div class="h-bar" />
     <ImageCarousel {imageList} />
     <Timetable />
+    <TextBlock
+        title={wellbeing_info.title}
+        description={wellbeing_info.description}
+        link={wellbeing_info.link}
+    />
+    <TextBlock
+        title={career_info.title}
+        description={career_info.description}
+        link={career_info.link}
+    />
+    <Footer />
 </div>
 
 <style>
