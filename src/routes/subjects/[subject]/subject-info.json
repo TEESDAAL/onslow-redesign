@@ -1,0 +1,78 @@
+{
+    "subjects": {
+        "digital-technology": {
+            "titles": [
+                "Digital Technology",
+                "Digital technologies"
+            ],
+            "description": "Digital Technologies focuses on building ākonga capability to apply technological ideas within a digital environment. Digital Technologies is a broad subject that covers many domains, as they study, ākonga will develop computational thinking skills and the ability to design and develop digital outcomes.",
+            "required_stationary": [
+                "A USB drive with at least 16GB of memory",
+                "At least 1 Black Pen",
+                "At least 1 Blue Pen",
+                "At least 1 Red Pen",
+                "A 1J8 grided book",
+                "A modern laptop"
+            ],
+            "teachers": [
+                {
+                    "name": "John Doe",
+                    "id": "john_doe"
+                },
+                {
+                    "name": "Jane Doe",
+                    "id": "jane_doe"
+                },
+                {
+                    "name": "John Smith",
+                    "id": "john_smith"
+                },
+                {
+                    "name": "Joe Blogs",
+                    "id": "joe_blogs"
+                },
+                {
+                    "name": "Aeowyn York",
+                    "id": "aeowyn_york"
+                }
+            ],
+            "timetable": "/static/timetable.jpg",
+            "internals": [
+                {
+                    "id": "AS 91890",
+                    "credits": 6,
+                    "description": "Conduct an inquiry to propose a digital technologies outcome",
+                    "link": "https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91890"
+                },
+                {
+                    "id": "AS 91891",
+                    "credits": 3,
+                    "description": "Apply conventions to develop a design for a digital technologies outcome",
+                    "link": "https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91891"
+                },
+                {
+                    "id": "AS 91892",
+                    "credits": 4,
+                    "description": "Use advanced techniques to develop a database",
+                    "link": "https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91892"
+                },
+                {
+                    "id": "AS 91893",
+                    "credits": 4,
+                    "description": "Use advanced techniques to develop a digital media outcome",
+                    "link": "https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91893"
+                }
+            ],
+            "externals": [
+                {
+                    "id": "AS 91899",
+                    "credits": 3,
+                    "description": "Present a summary of developing a digital outcome",
+                    "link": "https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91899"
+                }
+            ],
+            "image_path": "../../DTC.png",
+            "timetable_path": "../../DTC-timetable.png"
+        }
+    }
+}

@@ -1,6 +1,4 @@
-<script lang="ts">
-    import { loop_guard } from "svelte/internal";
-
+<script>
     export let CALENDAR = {
         "Jul 25": [
             {

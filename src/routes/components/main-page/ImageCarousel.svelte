@@ -1,9 +1,9 @@
-<script lang="ts">
-    export let imageList: string[][];
+<script>
+    export let imageList;
     import { onMount } from "svelte";
     import { each } from "svelte/internal";
-    let Carousel: any; // for saving Carousel component class
-    let carousel: any; // for calling methods of the carousel instance
+    let Carousel; // for saving Carousel component class
+    let carousel; // for calling methods of the carousel instance
     onMount(async () => {
         const module = await import("svelte-carousel");
         Carousel = module.default;
@@ -16,7 +16,7 @@
 
     let waiting = 0;
 
-    const onload = (el: any) => {
+    const onload = (el) => {
         waiting++;
         el.addEventListener("load", () => {
             waiting--;
@@ -28,11 +28,13 @@
 </script>
 
 <div id="thing">
+    <h1>Explore Our subjects</h1>
+    <div class="bar" />
     <svelte:component this={Carousel} bind:this={carousel}>
         {#each imageList as image}
             <a href={image[2]}>
                 <div class="carousel-holder">
-                    <h1>{image[1]}</h1>
+                    <h2>{image[1]}</h2>
                     <img use:onload src={image[0]} alt={image[1]} />
                 </div>
             </a>
@@ -45,8 +47,28 @@
         --carousel-width: 50vw;
         --carousel-height: calc(var(--carousel-width) / (1.618 * 2));
     }
+    h1 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 75px;
+        text-align: center;
+
+        color: #000000;
+    }
+    .bar {
+        width: 80%;
+        height: 3px;
+        background-color: black;
+    }
     #thing {
         width: var(--carousel-width);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
     }
     img {
         width: var(--carousel-width);
@@ -57,7 +79,7 @@
         text-decoration: none;
         color: black;
     }
-    .carousel-holder > h1 {
+    .carousel-holder > h2 {
         text-align: center;
         width: 50%;
         margin: 0 auto;

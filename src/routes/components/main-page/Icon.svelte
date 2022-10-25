@@ -1,8 +1,8 @@
-<script lang="ts">
-    export let imagePath: string;
-    export let text: string;
-    export let url: string;
-    export let scaling: number = 1;
+<script>
+    export let imagePath;
+    export let text;
+    export let url;
+    export let scaling = 1;
 </script>
 
 <!-- <img alt="test" src="" /> -->
@@ -36,5 +36,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-decoration: none;
+
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 52px;
+        text-align: center;
+
+        color: #000000;
+
+        color: #000000;
     }
 </style>

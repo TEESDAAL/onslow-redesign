@@ -1,0 +1,215 @@
+{
+    "teachers": {
+        "john_doe": {
+            "name": "John Doe",
+            "pronouns": "he/him",
+            "highest_role": [
+                "Digital Technologies Subject Area Leader",
+                "As the head of the digital technologies department I am in charge of organizing and coordinating as aspects of DT teaching"
+            ],
+            "roles": [
+                "Digital Technologies Subject Area Leader",
+                "Digital Technologies teacher"
+            ],
+            "contact_info": {
+                "email": "john.doe@onslow.school.nz"
+            },
+            "about_me": "Where I got educated, why I teach, why I teach my subjects",
+            "qualifications": [
+                "Bachelor of Science with a major in Computer Science",
+                "Bachelor of Education"
+            ],
+            "subjects": [
+                "9DTC",
+                "10DTC",
+                "11DTC",
+                "12DTC",
+                "12DTM",
+                "13DTC",
+                "13DTM"
+            ],
+            "image_path": "../../../teacher/john-doe.png"
+        },
+        "jane_doe": {
+            "name": "Jane Doe",
+            "pronouns": "she/her",
+            "highest_role": [
+                "Digital Technologies Teacher",
+                "Lorem ipsum dollar sit amet sit amet"
+            ],
+            "responsibilities": [
+                "Digital Technologies teacher",
+                "Mathematics Teacher"
+            ],
+            "contact_info": {
+                "email": "jane.doe@onslow.school.nz"
+            },
+            "about_me": "Where I got educated, why I teach, why I teach my subjects",
+            "qualifications": [
+                "Bachelor of Science with a double major in Computer Science, and Mathematics",
+                "Bachelor of Education"
+            ],
+            "subjects": [
+                "9DTC",
+                "10DTC",
+                "11DTC",
+                "12DTC",
+                "12DTM",
+                "13DTC",
+                "13DTM",
+                "12MAT",
+                "13MAC"
+            ],
+            "image_path": "../../../teacher/jane-doe.png"
+        },
+        "john_smith": {
+            "name": "John Smith",
+            "pronouns": "he/him",
+            "highest_role": [
+                "Digital Technologies Teacher",
+                "Lorem ipsum dollar sit amet sit amet"
+            ],
+            "responsibilities": [
+                "Digital Technologies teacher"
+            ],
+            "contact_info": {
+                "email": "john.smith@onslow.school.nz"
+            },
+            "about_me": "Where I got educated, why I teach, why I teach my subjects",
+            "qualifications": [
+                "Bachelor of Science with a major in Computer Science",
+                "Bachelor of Education"
+            ],
+            "subjects": [
+                "9DTC",
+                "10DTC",
+                "11DTC",
+                "12DTC",
+                "12DTM",
+                "13DTC",
+                "13DTM"
+            ],
+            "image_path": "../../../teacher/john-smith.png"
+        },
+        "joe_blogs": {
+            "name": "Joe Blogs",
+            "pronouns": "they/them",
+            "highest_role": [
+                "Digital Technologies Teacher",
+                "Lorem ipsum dollar sit amet sit amet"
+            ],
+            "responsibilities": [
+                "Digital Technologies teacher",
+                "Mathematics Teacher"
+            ],
+            "contact_info": {
+                "email": "joe.blogs@onslow.school.nz"
+            },
+            "about_me": "Where I got educated, why I teach, why I teach my subjects",
+            "qualifications": [
+                "Bachelor of Science with a major in Computer Science",
+                "Bachelor of Education"
+            ],
+            "subjects": [
+                "9DTC",
+                "10DTC",
+                "11DTC",
+                "12DTC",
+                "12DTM",
+                "13DTC",
+                "13DTM"
+            ],
+            "image_path": "../../../teacher/joe-blogs.png"
+        },
+        "aeowyn_york": {
+            "name": "Aeowyn York",
+            "pronouns": "she/her",
+            "highest_role": [
+                "Digital Technologies Teacher",
+                "Lorem ipsum dollar sit amet sit amet"
+            ],
+            "responsibilities": [
+                "Digital Technologies teacher"
+            ],
+            "contact_info": {
+                "email": "aeowyn.york@onslow.school.nz"
+            },
+            "about_me": "Where I got educated, why I teach, why I teach my subjects",
+            "qualifications": [
+                "Bachelor of Science with a major in Computer Science",
+                "Bachelor of Education"
+            ],
+            "subjects": [
+                "9DTC",
+                "10DTC",
+                "11DTC",
+                "12DTC",
+                "12DTM",
+                "13DTC",
+                "13DTM"
+            ],
+            "image_path": "../../../teacher/aeowyn-york.png"
+        }
+    },
+    "subjects": {
+        "digital-technology": {
+            "titles": [
+                "Digital Technology",
+                "Digital technologies"
+            ],
+            "description": "Digital Technologies focuses on building ākonga capability to apply technological ideas within a digital environment. Digital Technologies is a broad subject that covers many domains, as they study, ākonga will develop computational thinking skills and the ability to design and develop digital outcomes.",
+            "required_stationary": [
+                "A USB drive with at least 16GB of memory",
+                "At least 1 Black Pen",
+                "At least 1 Blue Pen",
+                "At least 1 Red Pen",
+                "A 1J8 grided book",
+                "A modern laptop"
+            ],
+            "teachers": [
+                {
+                    "name": "John Smith",
+                    "image-path": "/static/john-smith.jpg",
+                    "page-suffix": "john-smith"
+                }
+            ],
+            "timetable": "/static/timetable.jpg",
+            "internals": [
+                {
+                    "id": "AS 91890",
+                    "credits": 6,
+                    "description": "Conduct an inquiry to propose a digital technologies outcome",
+                    "link": "https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91890"
+                },
+                {
+                    "id": "AS 91891",
+                    "credits": 3,
+                    "description": "Apply conventions to develop a design for a digital technologies outcome",
+                    "link": "https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91891"
+                },
+                {
+                    "id": "AS 91892",
+                    "credits": 4,
+                    "description": "Use advanced techniques to develop a database",
+                    "link": "https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91892"
+                },
+                {
+                    "id": "AS 91893",
+                    "credits": 4,
+                    "description": "Use advanced techniques to develop a digital media outcome",
+                    "link": "https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91893"
+                }
+            ],
+            "externals": [
+                {
+                    "id": "AS 91899",
+                    "credits": 3,
+                    "description": "Present a summary of developing a digital outcome",
+                    "link": "https://www.nzqa.govt.nz/ncea/assessment/view-detailed.do?standardNumber=91899"
+                }
+            ],
+            "image_path": "../../DTC.png",
+            "timetable_path": "../../DTC-timetable.png"
+        }
+    }
+}

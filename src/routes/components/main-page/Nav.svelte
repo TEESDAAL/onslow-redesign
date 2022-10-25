@@ -13,7 +13,7 @@
             imagePath="/subjects-icon.png"
             text="Subjects"
             url="subjects-us.html"
-            scaling={5}
+            scaling={1.3}
         />
         <Icon
             imagePath="/international-icon.png"
@@ -33,11 +33,12 @@
 
 <style>
     nav {
-        margin-top: 20px;
+        margin-top: 70px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 70%;
     }
 
     section {

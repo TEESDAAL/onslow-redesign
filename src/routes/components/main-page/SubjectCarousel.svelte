@@ -1,22 +1,16 @@
-<script lang="ts">
-    import { onMount } from "svelte";
+<script>
+    import Carousel from "svelte-carousel";
 
-    let Carousel: any; // for saving Carousel component class
-    let carousel: any; // for calling methods of the carousel instance
-    onMount(async () => {
-        const module = await import("svelte-carousel");
-        Carousel = module.default;
-    });
-
+    let carousel; // for calling methods of the carousel instance
     const handleNextClick = () => {
         carousel.goToNext();
     };
 </script>
 
-<svelte:component this={Carousel} bind:this={carousel}>
+<Carousel bind:this={carousel}>
     <div>1</div>
     <div>2</div>
     <div>3</div>
-</svelte:component>
+</Carousel>
 
 <button on:click={handleNextClick}>Next</button>
