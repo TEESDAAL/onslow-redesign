@@ -1,38 +1,10 @@
-# create-svelte
+#onslow-redesign
+A server side redesign of the old Onslow website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Seeing the design
+Since this website has some logic that has to be run server side this has to be run via localhost
+1. Clone the repository using `git clone https://github.com/TEESDAAL/onslow-redesign`
+2. `cd` into the repository then install the npm packages using `npm install`
+3. The website can then be seen using `npm run dev` and then clicking the provided localhost url
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Please note this will not work if npm is not installed!
