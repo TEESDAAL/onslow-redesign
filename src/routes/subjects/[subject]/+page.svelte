@@ -4,11 +4,13 @@
     import RequiredStationary from "./components/RequiredStationary.svelte";
     import Timetable from "./components/Timetable.svelte";
     import SubjectOverview from "./components/SubjectOverview.svelte";
+    import Teachers from "./components/Teachers.svelte";
     import NavBar from "../../components/NavBar.svelte";
     import Footer from "../../components/Footer.svelte";
     /** @type {import('./$types').PageData} */
     export let data;
     let subject = data.post;
+    console.log(subject);
 </script>
 
 <NavBar />
@@ -16,6 +18,7 @@
     <Header title={subject.titles[0]} image_path={subject.image_path} />
     <Info title={subject.titles[1]} description={subject.description} />
     <RequiredStationary required_stationary={subject.required_stationary} />
+    <Teachers teachers={subject.teachers} />
     <Timetable timetable_src={subject.timetable_path} />
     <SubjectOverview
         internals={subject.internals}

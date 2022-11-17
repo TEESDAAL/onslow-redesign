@@ -1,6 +1,6 @@
 {
     "teachers": {
-        "john_doe": {
+        "john-doe": {
             "name": "John Doe",
             "pronouns": "he/him",
             "highest_role": [
@@ -30,7 +30,7 @@
             ],
             "image_path": "../../../teacher/john-doe.png"
         },
-        "jane_doe": {
+        "jane-doe": {
             "name": "Jane Doe",
             "pronouns": "she/her",
             "highest_role": [
@@ -62,7 +62,7 @@
             ],
             "image_path": "../../../teacher/jane-doe.png"
         },
-        "john_smith": {
+        "john-smith": {
             "name": "John Smith",
             "pronouns": "he/him",
             "highest_role": [
@@ -91,7 +91,7 @@
             ],
             "image_path": "../../../teacher/john-smith.png"
         },
-        "joe_blogs": {
+        "joe-blogs": {
             "name": "Joe Blogs",
             "pronouns": "they/them",
             "highest_role": [
@@ -121,7 +121,7 @@
             ],
             "image_path": "../../../teacher/joe-blogs.png"
         },
-        "aeowyn_york": {
+        "aeowyn-york": {
             "name": "Aeowyn York",
             "pronouns": "she/her",
             "highest_role": [

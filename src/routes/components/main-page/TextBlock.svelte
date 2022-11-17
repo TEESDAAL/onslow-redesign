@@ -40,4 +40,13 @@
         font-weight: bold;
         font-size: 1.3em;
     }
+    @media (orientation: portrait) {
+        .info-block {
+            width: 90%;
+            font-size: 0.6em;
+        }
+        .bar {
+            height: 1px;
+        }
+    }
 </style>

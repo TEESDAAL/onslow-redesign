@@ -61,6 +61,7 @@
         width: 80%;
         height: 3px;
         background-color: black;
+        margin-bottom: 10px;
     }
     #thing {
         width: var(--carousel-width);
@@ -89,5 +90,23 @@
         position: relative;
         background-color: white;
         filter: drop-shadow(1px);
+    }
+    @media (orientation: portrait) {
+        h1 {
+            font-size: 6vw;
+            line-height: normal;
+        }
+        .carousel-holder > h2 {
+            position: fixed;
+            box-sizing: border-box;
+            width: 90%;
+            margin: 0 5%;
+            transform: translate(0, -25%);
+            font-size: 5vw;
+        }
+        :root {
+            --carousel-width: 90vw;
+            --carousel-height: calc(var(--carousel-width) / (1.618 * 2));
+        }
     }
 </style>

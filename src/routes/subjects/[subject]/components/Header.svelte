@@ -1,6 +1,7 @@
 <script>
     export let title;
     export let image_path;
+    import Title from "./Title.svelte";
 </script>
 
 <header style="background-image: url({image_path});">
@@ -20,10 +21,16 @@
         font-family: "Poppins";
         font-style: normal;
         font-weight: 700;
-        font-size: 96px;
+        font-size: 6vw;
         line-height: 144px;
         text-align: center;
         color: #ffffff;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    @media (orientation: portrait) {
+        header {
+            height: 50vh;
+        }
     }
 </style>

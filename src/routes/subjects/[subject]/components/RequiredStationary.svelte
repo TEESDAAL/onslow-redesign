@@ -1,9 +1,10 @@
 <script>
     export let required_stationary;
+    import Title from "./Title.svelte";
 </script>
 
 <section>
-    <h2>Required Stationary</h2>
+    <Title title={"Required Stationary"} />
     {#each required_stationary as item}
         <p>{item}</p>
     {/each}
@@ -13,19 +14,6 @@
     section {
         width: 70%;
     }
-    h2 {
-        margin-top: 10vh;
-        margin-bottom: 4vh;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 75px;
-        text-align: center;
-
-        color: #000000;
-    }
-
     p {
         font-family: "Poppins";
         font-style: normal;
@@ -33,5 +21,11 @@
         font-size: 33px;
         line-height: 50px;
         text-align: center;
+    }
+    @media (orientation: portrait) {
+        p {
+            font-size: 4vw;
+            line-height: normal;
+        }
     }
 </style>

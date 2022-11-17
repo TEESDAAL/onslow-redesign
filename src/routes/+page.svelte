@@ -8,11 +8,11 @@
     import { getStudentWellBeingInfo, getCareerInfo } from "./data/store.js";
     import Footer from "./components/Footer.svelte";
     let imageList = [
-        ["/DTC.png", "Digital Technologies", "subjects/digital-technology"],
-        ["/green.png", "2nd image"],
-        ["/purple.png", "3rd image"],
-        ["/red.png", "4th image"],
-        ["/yellow.png", "5th image"],
+        ["/DTC.png", "13 Digital Technologies", "subjects/13DTC"],
+        ["/BIO.jpg", "13 Biology", "subjects/13BIO"],
+        ["/SCI.jpg", "11 General Science", "subjects/11SCI"],
+        ["/MAT.jpg", "12 Mathmatics", "subjects/12MAT"],
+        ["/ECO.jpg", "10 Business and Economics", "subjects/12BSE"],
     ];
     let wellbeing_info = getStudentWellBeingInfo();
     let career_info = getCareerInfo();

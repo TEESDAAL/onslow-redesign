@@ -30,4 +30,12 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    @media (orientation: portrait) {
+        .info-block {
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
 </style>

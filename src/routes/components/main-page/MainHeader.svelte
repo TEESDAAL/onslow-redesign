@@ -21,10 +21,10 @@
     }
 </script>
 
-<header bind:clientHeight={video_height}>
-    {#if paused === true && y_pos === 0}
-        <h1 out:fade>Discover Onslow College</h1>
-    {/if}
+<header>
+    <!-- {#if paused === true && y_pos === 0} -->
+    <h1 out:fade>Discover Onslow College</h1>
+    <!-- {/if} -->
     <div id="video-holder">
         <video loop id="video-background" src="/onslow_intro.mp4" muted />
     </div>
@@ -40,14 +40,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 3em;
+        font-size: min(3em, 5vw);
         width: 100%;
-        height: var(--video-height);
+        max-height: 60vh;
     }
+
     #video-holder {
         width: 100%;
         overflow-y: hidden;
-        height: 100%;
+        max-height: 60vh;
     }
     h1 {
         display: flex;

@@ -116,4 +116,11 @@
         text-align: right;
         width: auto;
     }
+
+    @media (orientation: portrait) {
+        #holder {
+            width: 90%;
+            font-size: 0.6em;
+        }
+    }
 </style>

@@ -1,6 +1,6 @@
 {
     "subjects": {
-        "digital-technology": {
+        "13DTC": {
             "titles": [
                 "Digital Technology",
                 "Digital technologies"
@@ -17,23 +17,23 @@
             "teachers": [
                 {
                     "name": "John Doe",
-                    "id": "john_doe"
+                    "id": "john-doe"
                 },
                 {
                     "name": "Jane Doe",
-                    "id": "jane_doe"
+                    "id": "jane-doe"
                 },
                 {
                     "name": "John Smith",
-                    "id": "john_smith"
+                    "id": "john-smith"
                 },
                 {
                     "name": "Joe Blogs",
-                    "id": "joe_blogs"
+                    "id": "joe-blogs"
                 },
                 {
                     "name": "Aeowyn York",
-                    "id": "aeowyn_york"
+                    "id": "aeowyn-york"
                 }
             ],
             "timetable": "/static/timetable.jpg",

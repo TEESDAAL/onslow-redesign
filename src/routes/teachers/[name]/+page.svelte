@@ -3,6 +3,7 @@
     import InfoBox from "./components/InfoBox.svelte";
     import { teachers } from "../../data/database.json";
     import NavBar from "../../components/NavBar.svelte";
+    import Footer from "../../components/Footer.svelte";
     /** @type {import('./$types').PageData} */
 
     export let data;
@@ -30,9 +31,9 @@
     for (let i = 0; i < test.subjects.length; i++) {
         let subject = test.subjects[i];
         if (i == test.subjects.length - 2 && test.subjects.length != 1) {
-            subjects_taught += `${subject}, and `;
+            subjects_taught += `<a href="../subjects/${subject}">${subject}<a>, and `;
         } else {
-            subjects_taught += `${subject}, `;
+            subjects_taught += `<a href="../subjects/${subject}">${subject}<a>, `;
         }
     }
     subjects_taught += ".";
@@ -56,18 +57,19 @@
         <InfoBox title="What I teach" description={subjects_taught} />
     </div>
 </main>
+<Footer />
 
 <style>
     main {
         display: flex;
         flex-direction: row;
-        margin-top: 150px;
+        margin-top: 100px;
     }
 
     .info-container {
         display: flex;
         justify-content: center;
-        width: max(30%, 400px);
+        width: max(40%, 500px);
     }
     #side-bar {
         display: flex;
@@ -75,5 +77,14 @@
         align-items: center;
         width: calc(100% - max(30%, 400px));
         justify-content: space-between;
+    }
+    @media (orientation: portrait) {
+        main {
+            flex-direction: column;
+            margin-top: 0;
+        }
+        main :is(.info-container, #side-bar) {
+            width: 100%;
+        }
     }
 </style>

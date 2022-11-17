@@ -1,38 +1,17 @@
 <script>
     export let title;
     export let description;
+    import Title from "./Title.svelte";
+    import Description from "./Description.svelte";
 </script>
 
 <section>
-    <h2>{title}</h2>
-    <p>{description}</p>
+    <Title {title} />
+    <Description {description} />
 </section>
 
 <style>
     section {
         width: 70%;
-    }
-    h2 {
-        margin-top: 10vh;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 75px;
-        text-align: center;
-
-        color: #000000;
-    }
-
-    p {
-        margin-top: 4vh;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 33px;
-        line-height: 50px;
-        text-align: center;
-
-        color: #000000;
     }
 </style>

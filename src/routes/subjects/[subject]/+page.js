@@ -3,12 +3,9 @@ import database from './subject-info.json';
 /** @type {import('./$types').PageLoad} */
 export function load({ params }) {
     let subject = database.subjects[params.subject]
-    // return {
-    //     post: {
-    //         title: subject.titles,
-    //         description: subject.description
-    //     }
-    // };
+    if (subject === undefined) {
+        throw error(404, `Subject ${params.subject} not found`)
+    }
     return {
         post: {
             titles: subject.titles,

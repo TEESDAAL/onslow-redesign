@@ -1,9 +1,10 @@
 <script>
+    import Title from "./Title.svelte";
     export let timetable_src;
 </script>
 
 <section>
-    <h2>Timetable</h2>
+    <Title title={"Timetable"} />
     <img alt="timetable" src={timetable_src} />
 </section>
 
@@ -16,14 +17,9 @@
     img {
         width: 100%;
     }
-    h2 {
-        margin-bottom: 5vh;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 75px;
-        text-align: center;
-        color: #000000;
+    @media (orientation: portrait) {
+        section {
+            margin-top: 10px;
+        }
     }
 </style>

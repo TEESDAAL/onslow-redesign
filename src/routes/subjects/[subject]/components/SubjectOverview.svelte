@@ -40,8 +40,8 @@
     details > summary span.icon {
         margin-left: 10px;
         padding-bottom: calc(60px / 5);
-        width: 60px;
-        height: 60px;
+        width: 4vw;
+        height: 4vw;
         transition: all 0.3s;
     }
 
@@ -68,11 +68,9 @@
 
     h3 {
         font-family: "Poppins";
-        font-style: normal;
         font-weight: 600;
         font-size: 35px;
         line-height: 45px;
-        /* line-height: 5px; */
         text-align: center;
         margin-bottom: 0vh;
         margin-top: 5vh;
@@ -96,5 +94,33 @@
     }
     div {
         margin-top: 50px;
+    }
+
+    @media (orientation: portrait) {
+        h2 {
+            font-size: 6vw;
+            line-height: normal;
+        }
+
+        details {
+            width: 70%;
+            margin: 30px 0 0 0;
+        }
+        a {
+            font-size: 3vw;
+            margin: 0;
+        }
+        p {
+            font-size: 3vw;
+            line-height: normal;
+            margin: 0;
+        }
+        h3 {
+            font-size: 5vw;
+            margin: 0;
+        }
+        div {
+            margin: 0;
+        }
     }
 </style>

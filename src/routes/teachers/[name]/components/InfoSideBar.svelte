@@ -69,4 +69,18 @@
         font-size: 15px;
         text-align: center;
     }
+
+    @media (orientation: portrait) {
+        .role-description {
+            display: none;
+        }
+
+        .general-info-holder .bar:nth-last-of-type(1) {
+            display: none;
+        }
+        .general-info-holder {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
 </style>
